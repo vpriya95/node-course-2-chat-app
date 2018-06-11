@@ -4,11 +4,9 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "preinstall": "npm install -g sonarqube-scanner",
         "start": "node server/server.js",
         "test": "mocha server/**/*.test.js --timeout 1500",
-        "test-watch": "nodemon --exec 'npm test'",
-        "sonar-scanner": "node_modules/sonarqube-scanner/dist/bin/sonar-scanner"
+        "test-watch": "nodemon --exec 'npm test'"
     },
     "engines": {
         "node": "9.5.0"
