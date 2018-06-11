@@ -4,6 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+        "preinstall": "npm install -g sonarqube-scanner",
         "start": "node server/server.js",
         "test": "mocha server/**/*.test.js --timeout 1500",
         "test-watch": "nodemon --exec 'npm test'",
