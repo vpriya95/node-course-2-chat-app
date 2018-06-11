@@ -7,7 +7,7 @@
         "start": "node server/server.js",
         "test": "mocha server/**/*.test.js --timeout 1500",
         "test-watch": "nodemon --exec 'npm test'",
-        "sonar-scanner": "node_modules/sonar-scanner/bin/sonar-scanner"
+        "sonar-scanner": "node_modules/sonarqube-scanner/dist/bin/sonar-scanner"
     },
     "engines": {
         "node": "9.5.0"
@@ -17,8 +17,7 @@
     "dependencies": {
         "express": "^4.16.2",
         "moment": "^2.20.1",
-        "socket.io": "^2.0.4",
-        "sonar-scanner": "^3.1.0"
+        "socket.io": "^2.0.4"
     },
     "devDependencies": {
         "expect": "^1.20.2",

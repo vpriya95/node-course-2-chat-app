@@ -2,5 +2,5 @@ projectKey=my:node-chat-pg-2
 serverUrl=http://159.89.140.184:9000
 serverVersion=6.7.4.38452
 dashboardUrl=http://159.89.140.184:9000/dashboard/index/my:node-chat-pg-2
-ceTaskId=AWPs7bUEc4k2DpHQjAUL
-ceTaskUrl=http://159.89.140.184:9000/api/ce/task?id=AWPs7bUEc4k2DpHQjAUL
+ceTaskId=AWPu09rOc4k2DpHQjAUP
+ceTaskUrl=http://159.89.140.184:9000/api/ce/task?id=AWPu09rOc4k2DpHQjAUP
