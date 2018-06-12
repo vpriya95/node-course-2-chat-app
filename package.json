@@ -6,7 +6,7 @@
     "scripts": {
         "start": "node server/server.js",
         "stop": "forever stopall",
-        "test": "nyc mocha server/utils/*.test.js --timeout 1500",
+        "test": "nyc --reporter=html --reporter=text mocha server/utils/*.test.js --timeout 1500",
         "test-watch": "nodemon --exec 'npm test'",
         "e2etest": "testcafe puppeteer server/testcafe/test.js"
     },
