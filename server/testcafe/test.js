@@ -3,7 +3,7 @@ import {
 } from 'testcafe'; // first import testcafe selectors
 
 fixture `Getting Started` // declare the fixture
-    .page `http://159.65.205.72:3000`; // specify the start page
+    .page `http://localhost:3000`; // specify the start page
 
 
 //then create a test and place your code there
@@ -18,7 +18,7 @@ test('Login', async t => {
 });
 
 test
-    .page `http://159.65.205.72:3000/chat.html?name=Sam&room=1`
+    .page `http://localhost:3000/chat.html?name=Sam&room=1`
     ('Chat room entry', async t => {
         // Starts at http://devexpress.github.io/testcafe/blog/
         await t
