@@ -33,3 +33,20 @@ test
             .pressKey('enter')
             .wait(1000)
     });
+
+test
+    .page `http://localhost:3000/chat_now.html?name=Sam&room=1`
+    ('Chat room entry', async t => {
+        // Starts at http://devexpress.github.io/testcafe/blog/
+        await t
+            .typeText("[name='message']", "Hey All")
+            .pressKey('enter')
+            .typeText("[name='message']", "This is Chief Bogo!")
+            .pressKey('enter')
+            .typeText("[name='message']", "How is it going?!")
+            .pressKey('enter')
+            .wait(3000)
+            .typeText("[name='message']", "See you all later!")
+            .pressKey('enter')
+            .wait(1000)
+    });
