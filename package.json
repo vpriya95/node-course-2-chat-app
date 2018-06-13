@@ -8,7 +8,7 @@
         "stop": "forever stopall",
         "test": "nyc --reporter=html --reporter=text mocha server/utils/*.test.js --timeout 1500",
         "test-watch": "nodemon --exec 'npm test'",
-        "e2etest": "testcafe puppeteer server/testcafe/test.js"
+        "e2etest": "testcafe puppeteer:no_sandbox server/testcafe/test.js"
     },
     "engines": {
         "node": "9.5.0"
