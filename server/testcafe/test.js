@@ -2,7 +2,7 @@ import {
     Selector
 } from 'testcafe'; // first import testcafe selectors
 
-fixture `Getting Started` // declare the fixture
+fixture `Chat App End to End Testing` // declare the fixture
     .page `http://localhost:3000`; // specify the start page
 
 
