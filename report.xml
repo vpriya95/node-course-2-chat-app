@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite name="TestCafe Tests: HeadlessChrome 69.0.3452 / Mac OS X 10.13.4" tests="2" failures="2" skipped="0" errors="2" time="22.124" timestamp="Thu, 14 Jun 2018 19:07:51 GMT" >
+  <testcase classname="Chat App End to End Testing" name="Login" time="11.269">
+    <failure>
+    <![CDATA[
+      1) The specified selector does not match any element in the DOM tree.
+
+         Browser: HeadlessChrome 69.0.3452 / Mac OS X 10.13.4
+
+             7 |
+             8 |
+             9 |//then create a test and place your code there
+            10 |test('Login', async t => {
+            11 |    await t
+          > 12 |        .typeText("[name='name']", "Chief Bogo")
+            13 |        .typeText("[name='room']", "1")
+            14 |        .click('#join')
+            15 |
+            16 |    // Use the assertion to check if the actual header text is equal to the
+      expected one
+            17 |    // .expect(Selector('#article-header').innerText).eql('Thank you, John
+      Smith!');
+
+            at <anonymous>
+      (/Users/ksawme/Dev/nodejs/node-course-2-chat-app/server/testcafe/test.js:12:10)
+            at test (/Users/ksawme/Dev/nodejs/node-course-2-chat-app/server/testcafe/test.js:10:1)
+    ]]>
+    </failure>
+  </testcase>
+  <testcase classname="Chat App End to End Testing" name="Chat room entry" time="10.818">
+    <failure>
+    <![CDATA[
+      1) The specified selector does not match any element in the DOM tree.
+
+         Browser: HeadlessChrome 69.0.3452 / Mac OS X 10.13.4
+
+            20 |test
+            21 |    .page `http://localhost:3000/chat.html?name=Sam&room=1`
+            22 |    ('Chat room entry', async t => {
+            23 |        // Starts at http://devexpress.github.io/testcafe/blog/
+            24 |        await t
+          > 25 |            .typeText("[name='message']", "Hey All")
+            26 |            .pressKey('enter')
+            27 |            .typeText("[name='message']", "This is Chief Bogo!")
+            28 |            .pressKey('enter')
+            29 |            .typeText("[name='message']", "How is it going?!")
+            30 |            .pressKey('enter')
+
+            at <anonymous>
+      (/Users/ksawme/Dev/nodejs/node-course-2-chat-app/server/testcafe/test.js:25:14)
+            at test.page
+      (/Users/ksawme/Dev/nodejs/node-course-2-chat-app/server/testcafe/test.js:20:1)
+    ]]>
+    </failure>
+  </testcase>
+</testsuite>
