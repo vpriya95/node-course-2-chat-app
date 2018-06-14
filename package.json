@@ -6,8 +6,11 @@
     "scripts": {
         "start": "node server/server.js",
         "stop": "forever stopall",
+        "test-jenkins": "JUNIT_REPORT_PATH=/report.xml mocha server/utils/*.test.js --colors --reporter mocha-jenkins-reporter",
         "test": "nyc --reporter=html --reporter=text mocha server/utils/*.test.js --timeout 1500",
         "test-watch": "nodemon --exec 'npm test'",
+        "unit-test": "mocha server/utils/*.test.js --timeout 1500",
+        "code-coverage-test": "nyc --reporter=html --reporter=text  mocha server/utils/*.test.js --timeout 1500",
         "e2etest": "testcafe puppeteer:no_sandbox server/testcafe/test.js",
         "lighthouse:ci": "node_modules/lighthouse/lighthouse-cli/index.js --output-path=./lighthouse-report.html --quiet --chrome-flags='--headless --no-sandbox=true' http://localhost:3000"
     },
@@ -18,6 +21,7 @@
     "license": "ISC",
     "dependencies": {
         "express": "^4.16.2",
+        "mocha-jenkins-reporter": "^0.3.12",
         "moment": "^2.20.1",
         "puppeteer": "^1.5.0",
         "socket.io": "^2.0.4",
