@@ -4,3 +4,4 @@ package-lock.json
 .scannerwork
 coverage
 lighthouse-report.html
+mochawesome-report
